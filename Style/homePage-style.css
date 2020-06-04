@@ -8,7 +8,6 @@ body,main,html
 	margin: 0  !important;
 	overflow-x: hidden;
 	overflow-y: auto;
-	background: url('../Img/background-login2.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -253,8 +252,8 @@ body,main,html
 
 #News  button, #Contact button, footer button {
     background: transparent;
-    border-radius: 30px;
-    border:0.5px solid white;
+    border-radius: 10px;
+    border: 1px solid white;
     text-align: center;
     font-size: 1.2em;
     color: white;
@@ -517,6 +516,11 @@ footer .wrapper .footerBlock li {
 footer .wrapper .footerBlock li i {
     color: rgba(255, 255, 255, 0.7);
     padding-right: 20px;
+}
+
+footer .wrapper .footerBlock li a {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
 
 #loadingOverlay .overlay{

@@ -1,11 +1,11 @@
 const CACHE_NAME = "Time_To_Fit";
 const urlsToCache = [
     '/TimeToFit/index.php',
-    '/TimeToFit/Img/*.*',
-    '/TimeToFit/Style/bootstrap.css',
     '/TimeToFit/Style/homePage-style.css',
-    '/TimeToFit/Style/feedBack-style.css',
-    '/TimeToFit/Style/loadingAnimation.css'
+    '/TimeToFit/Img/Backgrounds/Pages_Backgrounds/MainContainer.jpg',
+    '/TimeToFit/Img/Backgrounds/Pages_Backgrounds/Quotes_1.jpg',
+    '/TimeToFit/Img/Backgrounds/Pages_Backgrounds/Quotes_2.jpg',
+    '/TimeToFit/Img/Backgrounds/Pages_Backgrounds/Quotes_3.jpg',
 ]
 
 const self = this;
@@ -25,7 +25,7 @@ self.addEventListener('fetch', (event) => {
         caches.match(event.request)
         .then(() => {
             return fetch(event.request)
-                .catch(() => caches.match('/TimeToFit/index.html'))
+                .catch(() => caches.match('/TimeToFit/index.php'))
         })
     )
 })

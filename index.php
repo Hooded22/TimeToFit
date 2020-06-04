@@ -13,6 +13,8 @@
         <meta name="msapplication-TileColor" content="#000000">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#000000">
+        <meta http-equiv="Cache-control" content="public">
+        <link rel="manifest" href="./manifest.json">
 
         <!--Styles-->
         <link rel="stylesheet" href="Style/bootstrap.css">
@@ -24,19 +26,8 @@
         <link rel="manifest" href="manifest.json">
 
         <!--Favicon-->
-        <link rel="apple-touch-icon" sizes="57x57" href="Img/Favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="Img/Favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="Img/Favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="Img/Favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="Img/Favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="Img/Favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="Img/Favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="Img/Favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="Img/Favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="Img/Favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="Img/Favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="Img/Favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="200x200" href="Img/Favicon/icon.png">
+        
         
     </head>
     <body>
@@ -270,13 +261,13 @@
                                 Join Now !
                             </button>
                             <div class = "mediaBlock col-10 col-lg-5 mx-auto">
-                                <a href = "https://www.facebook.com/Time-To-Fit-101005584638261/">
+                                <a href = "https://www.facebook.com/przemek.sipta?ref=bookmarks">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                  <a href = "Includes/Pages/comingSoon.php">
-                                   <i class="fab fa-google-play"></i>
+                                   <i class="fab fa-github"></i>
                                 </a>
-                                 <a href = "https://www.instagram.com/timetofit.workoutapp/">
+                                 <a href = "https://www.instagram.com/hooded_alberchi/">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </div>
@@ -290,7 +281,6 @@
                         <div class = "wrapper col-12 mx-0 p-0">
                             <div class = "footerBlock col-10 col-lg-4 mx-auto">
                                 <h5 class = "col-8 mx-auto my-3 py-0">
-                                        <img src="Img/Logos/logo_medium.png" width="40" height="40" class="d-inline-block align-top mx-0 px-0" alt="TimeToFit">
                                     Time To Fit
                                 </h5>
                                 <p class = "col-8 mx-auto">
@@ -301,10 +291,10 @@
                                 <h5 class = "col-8 mx-auto my-3 py-0">
                                     Contact Us
                                 </h5>
-                                <ul class = "col-12 col-lg-6">
-                                    <li><i class="fas fa-at"></i> timetofit.contact@gmail.com</li>
+                                <ul class = "col-12 col-lg-7">
+                                    <li><i class="fas fa-at"></i> przemek.sipta@gmail.com</li>
                                     <li><i class="fas fa-phone"></i> 661 626 141</li>
-                                    <li><i class="fab fa-facebook-messenger" onclick = "location.href = 'https://www.facebook.com/Time-To-Fit-101005584638261/'"></i> Time To Fit</li>
+                                    <li><a href = "#"><i class="fab fa-facebook-messenger"></i> Time To Fit</a></li>
                                 </ul>
                             </div>
                             <div class = "footerBlock col-10 col-lg-4 mx-auto pb-5">
@@ -312,7 +302,7 @@
                                     Leave FeedBack
                                 </h5>
                                 <p class = "col-8 mx-auto">
-                                    Your feedbacks are very important to us so be so kind and leave something for us ;)
+                                    Your feedbacks are very important to us so be so kind and leave something positive ;)
                                 </p>
                                 <button type = "button" role = "button"  name = "joinUs" title = "feedBack" class = "col-8 col-lg-6 col-xl-4 col-md-4 py-2" onclick = "showFeedBack()">
                                    Feedback
@@ -324,7 +314,7 @@
             </footer>
 
             <!--FeedBack-->
-            <?php include('Includes/HTML_Parts/feedBack.php')?>
+            <?php include('Includes/HTML_Parts/indexComponents/feedBack.php')?>
 
             <section id = "loadingOverlay">
                 <div class = "overlay">
@@ -353,7 +343,7 @@
         if('serviceWorker' in navigator)
         {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/TimeToFit/sw.js')
+                navigator.serviceWorker.register('/TimeToFit/serviceworker.js')
                 .then((reg) => console.log("Success", reg.scope))
                 .catch((err) => console.log("Failure", err));
             })
