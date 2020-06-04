@@ -314,7 +314,7 @@
             </footer>
 
             <!--FeedBack-->
-            <?php include('Includes/HTML_Parts/indexComponents/feedBack.php')?>
+            <?php include('Includes/HTML_Parts/feedBack.php')?>
 
             <section id = "loadingOverlay">
                 <div class = "overlay">
