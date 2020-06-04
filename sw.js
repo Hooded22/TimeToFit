@@ -1,24 +1,47 @@
-var cacheName = 'Time To Fit';
-var filesToCache = [
-  'index.html',
-  'Style/homePage-style.css',
-  'main.js'
-];
+const CACHE_NAME = "Time_To_Fit";
+const urlsToCache = [
+    '/TimeToFit/index.php',
+    '/TimeToFit/Img/*.*',
+    '/TimeToFit/Style/bootstrap.css',
+    '/TimeToFit/Style/homePage-style.css',
+    '/TimeToFit/Style/feedBack-style.css',
+    '/TimeToFit/Style/loadingAnimation.css'
+]
 
-/* Start the service worker and cache all of the app's content */
-self.addEventListener('install', function(e) {
-  e.waitUntil(
-    caches.open(cacheName).then(function(cache) {
-      return cache.addAll(filesToCache);
-    })
-  );
-});
+const self = this;
 
-/* Serve cached content when offline */
-self.addEventListener('fetch', function(e) {
-  e.respondWith(
-    caches.match(e.request).then(function(response) {
-      return response || fetch(e.request);
-    })
-  );
-});
+self.addEventListener('install', (event) => {
+    event.waitUntil(
+        caches.open(CACHE_NAME)
+        .then((cache) => {
+            console.log("Chache opened");
+            return cache.addAll(urlsToCache);
+        })
+    )
+})
+
+self.addEventListener('fetch', (event) => {
+    event.respondWith(
+        caches.match(event.request)
+        .then(() => {
+            return fetch(event.request)
+                .catch(() => caches.match('/TimeToFit/index.html'))
+        })
+    )
+})
+
+self.addEventListener('active', (event) => {
+    const cacheWhiteList = [];
+    cacheWhiteList.push(CACHE_NAME);
+
+    event.waitUntil(
+        caches.keys().then((cacheNames) => Promise.all(
+            cacheNames.map((cacheName) => {
+                if(!cacheWhiteList.includes(cacheName))
+                {
+                    return caches.delete(cacheName);
+                }
+            })
+        ))
+    )
+})

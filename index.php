@@ -349,13 +349,20 @@
 
         </main>
     </body>
-    <script src = "Js/progressiveApp.js"></script>
+    <script>
+        if('serviceWorker' in navigator)
+        {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/TimeToFit/sw.js')
+                .then((reg) => console.log("Success", reg.scope))
+                .catch((err) => console.log("Failure", err));
+            })
+        }
+    </script>
     <script type="text/javascript" src="https://unpkg.com/onscreen/dist/on-screen.umd.min.js"></script>
     <script src="Js/j.query.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script type="text/javascript" src="Js/bootstrap.min.js"></script>
     <script src = "Js/Pages/homePage.js"></script>
     <script src = "Js/Pages/feedBack.js"></script>
-    <script src = "sw.js"></script>
-    <script src = "main.js"></script>
 </html>
