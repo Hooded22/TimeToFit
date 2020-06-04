@@ -1,0 +1,162 @@
+body,main,html
+{
+    width:100%;
+    height: auto;
+	min-height:100%;
+	min-width:100%;
+	max-height: 100%;
+	max-width: 100%;
+	margin: 0  !important;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: url('../Img/Backgrounds/Pages_Backgrounds/ComingSoon_background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.overlay
+{
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	background: rgba(000,000,000,0.4);
+	text-align: center;
+}
+
+.navbar {
+    background: '#000000';
+    z-index: 100;
+    width: 100vw;
+    min-width: 100%;
+}
+
+.navbar .active {
+   font-weight: 800;
+   font-size: 1em;
+}
+
+.navbar #version{
+    position: absolute;
+    left: 20px;
+    top:20;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-item a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px #b71c1c;
+}
+
+.nav-item a:hover {
+    color: rgba(255, 255, 255, 0.788);
+    cursor: pointer;
+}
+
+#brand_small{
+    line-height: 40px;
+    font-size: 1.1em;
+}
+
+
+#mainContainer .wrapper{
+    height: 100vh;
+    background: url('../Img/Backgrounds/Pages_Backgrounds/ComingSoon_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#mainContainer .wrapper::after{
+    content: "";
+    z-index: 0;
+    background: rgba(000,000,000,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#mainContainer .wrapper h5{
+    font-size: 4em;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    text-shadow:0px 4px 4px black;
+    z-index: 2;
+    margin-top:5%;
+}
+
+#mainContainer .wrapper h6{
+    font-size: 1.4em;
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    text-shadow:0px 4px 4px black;
+    z-index: 2;
+    margin-top:5%;
+}
+
+
+#mainContainer .wrapper button{
+    font-size: 1em;
+    color: #fff;
+    background: rgba(000,000,000,0.7);
+    border: 1px solid white;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    top:15%;
+    z-index: 2;
+    overflow: hidden;
+    
+}
+
+#mainContainer .wrapper button:hover{
+    border-color: #b71c1c;
+    transition: all .1s linear;
+}
+
+#mainContainer .wrapper button::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:-75%;
+    height: 100%;
+    background: #b71c1c;
+    width: 50%;
+    transform: skewX(60deg);
+    transition: all .1s linear;
+    z-index: -2;
+}
+
+#mainContainer .wrapper button::after{
+    content: "Be...";
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#mainContainer .wrapper button:hover::before{
+    left: 75%;
+}
+
+#mainContainer .wrapper button:hover::after{
+    content: 'Ready !';
+}

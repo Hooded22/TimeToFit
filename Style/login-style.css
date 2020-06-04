@@ -1,0 +1,194 @@
+body
+{
+	width:100%;
+	min-height:100vh;
+	min-width:100%;
+	max-height: 100%;
+	max-width: 100%;
+	margin: 0  !important;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: url('../Img/background-login2.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+.navbar {
+    background: '#000000';
+    z-index: 100;
+    width: 100vw;
+    min-width: 100%;
+}
+
+.navbar .active {
+   font-weight: 800;
+   font-size: 1em;
+}
+
+.navbar #version{
+    position: absolute;
+    left: 20px;
+    top:20;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-item a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px #b71c1c;
+}
+
+.nav-item a:hover {
+    color: rgba(255, 255, 255, 0.788);
+    cursor: pointer;
+}
+
+#brand_small{
+    line-height: 40px;
+    font-size: 1.1em;
+}
+
+
+
+.blockMessage
+{
+	height: auto;
+	background:green;
+	font-size: 20px;
+	text-align:center;
+	line-height: 50px;
+	width: 100vw;
+}
+
+#errorMessage
+{
+	background:#b71c1c;
+}
+
+#succesMessage
+{
+	background:green;	
+}
+
+.formWrapper
+{
+	/*background:#151515;*/
+	background: radial-gradient(#272626, #000);
+	border-radius: 10px;
+	box-shadow: 0 0 4px 1px #000;
+	height: 100%;
+	transition: height 4s linear;
+}
+
+.formWrapper h3
+{
+	border-bottom: 0.5px solid rgba(255,255,255,0.2);;
+	text-align:center;
+
+}
+
+.formWrapper h4
+{
+	border-bottom: 0.5px solid rgba(255,255,255,0.2);;
+	text-align:center;
+}
+
+.formWrapper span:hover
+{
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.formWrapper form p
+{
+	color: white;
+	font-size: 13px;
+}
+
+.formWrapper form input
+{
+	background:rgba(255,255,255,0);
+	border:none;
+	border-top:0.5px solid #eee;
+	border-bottom:0.5px solid #eee;
+	color: white;
+	position: relative;
+	z-index: 4;
+
+	 /*$border: 5px;
+  color: #FFF;
+  background: #000;
+  background-clip: padding-box; 
+  border: solid $border transparent;
+  border-radius: 1em;*/
+}
+
+.formWrapper form button
+{
+	background:rgba(255,255,255,0);
+	border-radius: 10px;
+	border:none;
+	color:white;
+	box-shadow: 0 0 4px white;
+	transition: all .2s linear;
+}
+
+.formWrapper form button:hover
+{
+	/*background:rgba(000,000,000,0.2);*/
+	background: rgba(183,28,26,0.2);
+	box-shadow: 0 0 3px white;
+}
+
+
+.formWrapper figure
+{
+	position: relative;
+}
+
+.formWrapper figcaption
+{
+	position: absolute;
+	left: 10px;
+	top: 20%;
+	font-size: 1em;
+	opacity: 0.7;
+	text-align:center;
+}
+
+#backToLogin
+{
+	display: none;
+	color: #ccc;
+	z-index: 4;
+	left: 8%;
+	position: absolute;
+	cursor: pointer;
+
+}
+
+@media only screen and (max-width:991.5px)
+{
+    html {
+        font-size: 85%;
+    }
+
+    #mainContainer {
+        font-size: 125%;
+    }
+
+	.nav-item a {
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        letter-spacing: 8px;
+        font-family: 'Rajdhani', sans-serif;
+        text-align: center;
+	}
+}

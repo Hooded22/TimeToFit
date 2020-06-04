@@ -1,0 +1,550 @@
+body,main,html
+{
+	width:100%;
+	min-height:100vh;
+	min-width:100%;
+	max-height: 100%;
+	max-width: 100%;
+	margin: 0  !important;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: url('../Img/background-login2.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: white;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+.overlay
+{
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	background: rgba(000,000,000,0.4);
+	text-align: center;
+}
+
+.navbar {
+    background: '#000000';
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    min-width: 100%;
+}
+
+.navbar .active {
+   font-weight: 800;
+   font-size: 1em;
+}
+
+.navbar #version{
+    position: absolute;
+    left: 20px;
+    top:20;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-item a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    
+}
+
+.nav-item a:hover {
+    color: rgba(255, 255, 255, 0.788);
+    cursor: pointer;
+}
+
+#brand_small{
+    line-height: 40px;
+    font-size: 1.1em;
+}
+
+
+#main_menu{
+
+    position: absolute;
+    top: 100%;
+    z-index: 100;
+    background: #000;
+    width: 100%;
+    left: 0;
+}
+
+
+.dropdown-divider {
+
+    height: 0;
+    margin: .5rem 0;
+    overflow: hidden;
+    border-top: 1px solid #1b1b1b;
+}
+
+
+.button
+{
+	background:rgba(255,255,255,0);
+}
+
+
+#main_menu{
+
+    position: absolute;
+    top: 100%;
+    z-index: 100;
+    background: #000;
+    width: 100%;
+    left: 0;
+}
+
+
+.dropdown-divider {
+
+    height: 0;
+    margin: .5rem 0;
+    overflow: hidden;
+    border-top: 1px solid #1b1b1b;
+}
+
+.blockMessage {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: auto;
+	z-index: 100;
+}
+
+
+#errorMessage
+{
+	background:#b71c1c;
+}
+
+#errorMessage .error
+{
+	color: white;
+}
+
+.error
+{
+	font-size: 1em;
+	text-align: center;
+	color: #ff0d0d;
+}
+
+#succesMessage
+{
+	background:green;	
+}
+
+.formWrapper
+{
+	/*background:#151515;*/
+	background: radial-gradient(#272626, #000);
+	border-radius: 10px;
+	box-shadow: 0 0 4px 1px #000;
+	height: 100%;
+	transition: height 4s linear;
+}
+
+.formWrapper h3
+{
+	border-bottom: 0.5px solid rgba(255,255,255,0.2);;
+	text-align:center;
+
+}
+
+.formWrapper h4
+{
+	border-bottom: 0.5px solid rgba(255,255,255,0.2);;
+	text-align:center;
+}
+
+.formWrapper span:hover
+{
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.formWrapper form p
+{
+	color: white;
+	font-size: 13px;
+}
+
+.formWrapper form input, .formWrapper form select
+{
+	background:rgba(255,255,255,0);
+	border:none;
+	border-top:0.5px solid #eee;
+	border-bottom:0.5px solid #eee;
+	color: white;
+	position: relative;
+	z-index: 4;
+	height: 40px;
+	line-height: 40px;
+
+	 /*$border: 5px;
+  color: #FFF;
+  background: #000;
+  background-clip: padding-box; 
+  border: solid $border transparent;
+  border-radius: 1em;*/
+}
+
+.formWrapper textarea
+{
+	background:rgba(255,255,255,0);
+	border:none;
+	border-top:0.5px solid #eee;
+	border-bottom:0.5px solid #eee;
+	color: white;
+	position: relative;
+	z-index: 4;
+	height: 30vh;
+	resize: none;
+	text-align: left;
+}
+
+.formWrapper form select option{
+	background: transparent;
+	color: black;
+	border:none;
+}
+
+.formWrapper form button
+{
+	background:rgba(255,255,255,0);
+	border-radius: 10px;
+	border:none;
+	color:white;
+	box-shadow: 0 0 4px white;
+	transition: all .2s linear;
+}
+
+.formWrapper form button:hover
+{
+	/*background:rgba(000,000,000,0.2);*/
+	background: rgba(183,28,26,0.2);
+	box-shadow: 0 0 3px white;
+}
+
+button, .button
+{
+	background:rgba(255,255,255,0);
+	border-radius: 10px;
+	border:none;
+	color:white;
+	box-shadow: 0 0 4px white;
+	transition: all .2s linear;
+}
+
+a.button
+{
+	background:rgba(255,255,255,0);
+	border-radius: 10px;
+	border:none;
+	color:white;
+	box-shadow: 0 0 4px white;
+	transition: all .2s linear;
+	text-align:center;
+	cursor: pointer;
+}
+
+button:hover
+{
+	/*background:rgba(000,000,000,0.2);*/
+	background: rgba(183,28,26,0.2);
+	box-shadow: 0 0 3px white;
+}
+
+
+.formWrapper figure
+{
+	position: relative;
+}
+
+
+.formWrapper figcaption
+{
+	position:relative;
+	top:0%;  
+	left: 10px;
+	font-size: 0.9em;
+	opacity: 0.7;
+	text-align: left;
+}
+
+.formWrapper .row > a > i
+{
+	font-size: 1.2em;
+}
+
+.formWrapper a
+{
+	color:white;
+	font-size: auto;
+	padding: 0;
+	margin:0;
+	cursor: pointer;
+
+}
+
+.formWrapper #countFigcaption
+{
+	position: absolute;
+	left: 10px;
+	top: 20%;
+	font-size: 1em;
+	opacity: 0.7;
+	text-align:center;
+}
+
+.form_box
+{
+	background:rgba(255,255,255,0);
+	border:none;
+	border-top:0.5px solid #eee;
+	border-bottom:0.5px solid #eee;
+	color: white;
+	position: relative;
+	z-index: 4;
+	height: auto;
+	clear: both;
+	line-height: 50px;
+}
+
+.form_box h6
+{
+	font-size: 1.2em;
+}
+
+.form_box i
+{
+	margin-left: 50%;
+	cursor: pointer;
+	font-size: 1.4em;
+	float: right;
+}
+
+.form_box i:hover
+{
+	opacity: 0.9;
+}
+
+.routine_button_menu
+{
+	background: rgba(000,000,000,0.7);
+	position: absolute;
+}
+
+.routine_button_menu div
+{
+	background: white;
+	border-radius: 4px;
+	box-shadow: 0px 0px 8px 1px #000;
+	margin-top: 20%;
+}
+
+.routine_button_menu button
+{
+	background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    border-bottom: 1px solid rgba(000,000,000,0.5);
+    cursor: pointer;
+}
+
+.routine_button_menu button:first-child
+{
+	background: transparent;
+    border: none;
+    outline: none;
+    color: #b71c1c;
+    font-weight:700;
+    border-bottom: 1px solid #b71c1c;
+    cursor: pointer;
+}
+
+.routine_button_menu i
+{
+	position: absolute;
+    top: -17px;
+    color: #fffefe;
+}
+
+.routine_button_menu h5
+{
+	color:black;
+	font-size: 1.1em;
+}
+
+.routine_button_menu input
+{
+	outline: none;
+    border: none;
+    border-bottom: 1px solid #7d7b7b;
+    text-align: center;
+    /* border-radius: 50px; */
+    /* border-top: 1px solid #7d7b7b; */
+}
+
+.routine_button_menu .fa-times
+{
+	position: absolute;
+	top: 8%;
+	left: 20%;
+	color:white;
+	font-size: 1.2em;
+}
+
+.routine_button_menu .iconBlock
+{
+	height: 80px;
+    background: radial-gradient(#272626, #000);
+    box-shadow: none;
+}
+
+.routine_button_menu .iconBlock i
+{
+	position: relative;
+    color: #b71c1c;
+    top:0;
+    font-size: 3em;
+}
+
+.routine_button_menu .color_block
+{
+    height: 80px;
+    background: #b71c1c;
+    box-shadow: none;
+}
+
+#routine_popout_overlay
+{
+	background: rgba(000,000,000,0.7);
+	position: fixed;
+}
+
+#routine_popout
+{
+	background: white;
+	border-radius: 4px;
+	box-shadow: 0px 0px 8px 1px #000;
+	margin-top: 20%;
+}
+
+#popout_content button
+{
+	background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    cursor: pointer;
+}
+
+#popout_content button:first-child
+{
+	background: transparent;
+    border: none;
+    outline: none;
+    color: #b71c1c;
+    font-weight:700;
+    cursor: pointer;
+}
+
+#popout_closer
+{
+	position: absolute;
+    top: -17px;
+	color: #fffefe;
+	height: 80px;
+    box-shadow: none;
+}
+
+#popout_header h5
+{
+	color:black;
+	font-size: 1.1em;
+}
+
+#routine_popout i
+{
+	position: absolute;
+    top: -17px;
+    color: #fffefe;
+}
+
+#popout_content input
+{
+	outline: none;
+    border: none;
+    border-bottom: 1px solid #7d7b7b;
+    text-align: center;
+    /* border-radius: 50px; */
+    /* border-top: 1px solid #7d7b7b; */
+}
+
+#routine_closer
+{
+	position: absolute;
+	top: 8%;
+	left: 20%;
+	color:white;
+	font-size: 1.2em;
+}
+
+#routine_popout .iconBlock
+{
+	height: 80px;
+    background: radial-gradient(#272626, #000);
+    box-shadow: none;
+}
+
+#routine_popout .iconBlock i
+{
+	position: relative;
+    color: #b71c1c;
+    top:0;
+    font-size: 3em;
+}
+
+#routine_popout .color_block
+{
+    height: 80px;
+    background: #b71c1c;
+    box-shadow: none;
+}
+
+.bottom_icon{
+	color: white;
+	display: block;
+	font-size: 1.2em;
+    background: #b71c1c;
+    padding: 10px;
+    border-radius: 50%;
+	position: relative;
+	float: right;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+	line-height: 1;
+	cursor: pointer;
+	margin-inline-start: 20px;
+}
+
+
+.hidden
+{
+	display: none !important;
+}

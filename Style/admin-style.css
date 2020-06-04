@@ -1,0 +1,267 @@
+body,main,html
+{
+	width:100%;
+	min-height:100vh;
+	min-width:100%;
+	max-height: 100%;
+	max-width: 100%;
+	margin: 0  !important;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: url('../Img/background-login2.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+
+.bg-timeToFit
+{
+	background: #000;
+}
+
+.navbar a
+{
+	color: #ccc;
+}
+
+.navbar a:hover
+{
+	color: #fff;
+}
+
+.navbar a.active
+{
+ 	color: #ff0d0d
+}
+
+.navbar span.navbar-toggler-icon
+{
+	color:#ccc;
+}
+
+.nav-item
+{
+	font-size: 1.1em;
+}
+
+.navbar-form-search input
+{
+	background:transparent;
+	height: 20px;
+	border:none;
+	color: white;
+}
+
+.navbar-form-search input:focus
+{
+	background:transparent;
+	height: 20px;
+	border:none;
+	color: white;
+	outline: none;
+}
+
+.navbar-form-search button
+{
+	color: white;
+	border: none;
+	background: transparent;
+	position: relative;
+	text-align:center;
+}
+.navbar-form-search button:hover
+{
+	background:transparent;
+	color: white;
+}
+
+.navbar-form-search button:hover::before
+{
+	width:100%;
+}
+
+.navbar-form-search button::before
+{
+	content: "";
+	width:0;
+	border-bottom: 0.5px solid #ccc ; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 90%;
+	margin:0 auto;
+	transition: all .3s linear
+}
+
+.form-control::placeholder
+{
+	color: white;
+}
+
+
+.navbar-nav .dropdown-menu {
+
+    position: static;
+    float: none;
+    background: #030303;
+    box-shadow: 0 0 4px 2px #323030;
+
+}
+
+
+#main_menu{
+
+    position: absolute;
+    top: 100%;
+    z-index: 100;
+    background: #000;
+    width: 100%;
+    left: 0;
+}
+
+
+.dropdown-divider {
+
+    height: 0;
+    margin: .5rem 0;
+    overflow: hidden;
+    border-top: 1px solid #1b1b1b;
+}
+
+
+#errorMessage
+{
+	background:#b71c1c;
+}
+
+#succesMessage
+{
+	background:green;	
+}
+
+.formWrapper
+{
+	/*background:#151515;*/
+	background: radial-gradient(#272626, #000);
+	border-radius: 10px;
+	box-shadow: 0 0 4px 1px #000;
+	height: 100%;
+	transition: height 4s linear;
+}
+
+.formWrapper h3
+{
+	border-bottom: 0.5px solid rgba(255,255,255,0.2);;
+	text-align:center;
+
+}
+
+.formWrapper h4
+{
+	border-bottom: 0.5px solid rgba(255,255,255,0.2);;
+	text-align:center;
+}
+
+.formWrapper span:hover
+{
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.formWrapper form p
+{
+	color: white;
+	font-size: 13px;
+}
+
+.formWrapper form input, .formWrapper form select, .formWrapper label
+{
+	background:rgba(255,255,255,0);
+	border:none;
+	border-top:0.5px solid #eee;
+	border-bottom:0.5px solid #eee;
+	color: white;
+	position: relative;
+	z-index: 4;
+
+	 /*$border: 5px;
+  color: #FFF;
+  background: #000;
+  background-clip: padding-box; 
+  border: solid $border transparent;
+  border-radius: 1em;*/
+}
+
+.formWrapper form select option{
+	background: transparent;
+	color: black;
+	border:none;
+}
+
+.upload-btn-wrapper {
+  position: relative;
+  height: 50px;
+  text-align:center;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 1em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /*opacity: 0;*/
+}
+
+.upload-btn-wrapper button {
+  font-size: 1.2em;
+  color: white;
+  cursor: pointer;
+}
+
+.formWrapper form button
+{
+	background:rgba(255,255,255,0);
+	border-radius: 10px;
+	border:none;
+	color:white;
+	box-shadow: 0 0 4px white;
+	transition: all .2s linear;
+}
+
+.formWrapper form button:hover
+{
+	/*background:rgba(000,000,000,0.2);*/
+	background: rgba(183,28,26,0.2);
+	box-shadow: 0 0 3px white;
+}
+
+
+.formWrapper figure
+{
+	position: relative;
+}
+
+.formWrapper figcaption
+{
+	position: absolute;
+	left: 10px;
+	top: 20%;
+	font-size: 1em;
+	opacity: 0.7;
+	text-align:center;
+}
+
+.hidden
+{
+	display: none !important;
+}
+
+@media only screen and (min-width:990px)
+{
+	#main_menu{
+		position: relative;
+	}
+
+}

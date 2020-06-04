@@ -1,0 +1,119 @@
+.hidden {
+    display: none !important;
+}
+
+#feedBack .overlay {
+    background: radial-gradient(#525050, #000);
+    height: 100vh;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+    text-align: center;
+    overflow-y: auto;
+}
+
+#feedBack .wrapper {
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+}
+
+#feedBack .wrapper i.fa-times-circle {
+    position: absolute;
+    top:5%;
+    left:0;
+    font-size: 1.6em;
+}
+
+#feedBack .wrapper h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+#feedBack .wrapper h2 {
+    font-size: 2.3em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#feedBack .wrapper h3 {
+    font-size: 2.3em;
+}
+
+
+#feedBack .wrapper form textarea {
+    margin-top: 5%;
+    resize: none;
+    background: rgba(7, 7, 7, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 30vh;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+#feedBack form button {
+    background: transparent;
+    border-radius: 30px;
+    border:0.5px solid white;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+}
+
+#feedBack form button:hover  {
+    border:0.5px solid rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+#feedBack .rateContainer {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#feedBack .rateContainer .starsContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#feedBack .rateContainer h1 {
+    font-size: 1.3em;
+}
+
+#feedBack .rateContainer i {
+    font-size: 2em;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+#feedBack .acknowledgements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#feedBack .acknowledgements h1{
+    font-family: 'Oswald';
+    font-size: 2.3em;
+}
+
+#feedBack .acknowledgements span{
+    color:#b71c1c;
+    font-size: 1.3em;
+    font-family: 'Oswald'
+}
+
+#feedBack .acknowledgements span:hover{
+    filter: brightness(120%);
+    cursor: pointer;
+}

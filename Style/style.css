@@ -1,0 +1,1092 @@
+body,main,html
+{
+	width:100%;
+	min-height:100vh;
+	min-width:100%;
+	max-height: 100%;
+	max-width: 100%;
+	margin: 0  !important;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: radial-gradient(#272626, #000);
+	color: white;
+	height: auto;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+main {
+	overflow: hidden;
+}
+
+.navbar {
+    background: '#000000';
+    z-index: 100;
+    width: 100vw;
+	min-width: 100%;
+	position: relative;
+}
+
+
+
+.navbar .active {
+   font-weight: 800;
+   font-size: 1em;
+}
+
+.navbar #version{
+    position: absolute;
+    left: 20px;
+    top:20;
+    font-size: 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-item a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 4px #b71c1c;
+}
+
+.nav-item a:hover {
+    color: rgba(255, 255, 255, 0.788);
+    cursor: pointer;
+}
+
+#brand_small{
+    line-height: 40px;
+    font-size: 1.1em;
+}
+
+
+#main_menu{
+
+    position: absolute;
+    top: 100%;
+    z-index: 100;
+    background: #000;
+    width: 100%;
+    left: 0;
+}
+
+
+.dropdown-divider {
+
+    height: 0;
+    margin: .5rem 0;
+    overflow: hidden;
+    border-top: 1px solid #1b1b1b;
+}
+
+
+.button
+{
+	background:rgba(255,255,255,0);
+}
+
+.overlay
+{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	background: rgba(000,000,000,1);
+	text-align: center;
+}
+
+.ovr-alt
+{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 4;
+	background: rgba(000,000,000,1);
+	text-align: center;
+}
+
+.ovr-min
+{
+	height: 0;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	background: rgba(000,000,000,1);
+	text-align: center;
+}
+
+
+
+
+.exercise_title
+{
+	font-size: 1.5em;
+	font-family: calibri;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px 0 10px 0;
+	font-family: 'Oswald', sans-serif;
+}
+
+.description_bar
+{
+	text-align: center;
+}
+
+.desc
+{
+	text-align: center;
+
+}
+
+.desc_block
+{
+	text-align: center;
+	background: #840909;
+	border-radius: 3px;
+	height: 50px;
+	box-shadow: 0px 2px 4px 0px #484848;
+	transition: all .2s linear;
+	cursor: pointer;
+}
+
+.desc_block > i
+{
+	line-height: 50px;
+	font-size: 1.2em;
+	font-style: normal;
+}
+
+.desc_block:hover
+{
+	box-shadow: none;
+}
+
+.desc_content
+{
+	width: 70px;
+	height: 70px;
+	background: blue;
+	clear: both;
+	margin:0 auto;
+}
+
+.desc_content_widther
+{
+	width: 140px;
+	height: 70px;
+	background: blue;
+	clear: both;
+	margin:0 auto;
+}
+
+.timer_container{
+	position: relative;
+	text-align: center;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 180px;
+}
+
+
+.timer
+{
+	text-align: center;
+	height: 30vh;
+	position: relative;
+	background: #1b1b1b;
+	border-radius: 50%;
+	border: 2px solid white;
+	box-sizing: border-box;
+
+}
+
+.timer_clock
+{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: auto;
+}
+
+
+.time_menu
+{
+	height: 36vh;
+}
+
+.time_menu_element
+{
+	height: 8vh;
+	margin-top:10px;
+	width: 100%;
+	text-align: center;
+	background: #000;
+	border-radius: 4px;
+	box-shadow: 0px 2px 4px 0px #484848;
+	cursor: pointer;
+	transition: all .1s ease-in-out;
+}
+
+.time_menu_element:first-child
+{
+	margin: 0;
+}
+
+.time_menu_element:hover
+{
+	box-shadow: none;
+}
+
+.time_menu i
+{
+	line-height: 8vh;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+
+.timer_content
+{
+	font-size: 6em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+.timer_content span {
+	width: 100%;
+	text-align: center;
+}
+
+.spanReps {
+	font-size: 0.4em;
+	text-transform: uppercase;
+	width: 100%;
+	display: block;
+	line-height: 20px;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+.timer_overlay
+{
+	height: 100%;
+	background:rgba(000,000,000,0.3);
+	border-radius: 50%;
+	line-height: 32vh;
+	font-size: 4.5em;
+	color: white;
+	text-align: center;
+	opacity: 1;
+	z-index: 1;
+	cursor: pointer;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.timer_overlay i {
+	display: flex;
+	align-self: center;
+	
+}
+
+.timer_overlay:hover
+{
+	opacity: 0.9;
+}
+
+.timer_large
+{
+	box-shadow: 0px 0px 10px 3px #151515;
+}
+
+.direction
+{
+	text-align: center;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+.direction i
+{
+	font-size: 2em;
+}
+
+.direction:hover
+{
+	opacity: 0.8;
+}
+
+.direction_button_menu
+{
+	background: rgba(000,000,000,0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.direction_button_menu div
+{
+	background: white;
+	border-radius: 4px;
+	box-shadow: 0px 0px 8px 1px #000;
+	margin-top: 50%;
+}
+
+.direction_button_menu button
+{
+	background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    border-bottom: 1px solid rgba(000,000,000,0.5);
+    cursor: pointer;
+}
+
+.direction_button_menu i
+{
+	position: absolute;
+    top: -17px;
+    color: #fffefe;
+}
+
+
+.time_menager
+{
+	text-align: center;
+	width: 100%;
+	font-size: 1.3em;
+}
+
+.time_menager p
+{
+	font-size: 2em;
+}
+
+.time_menager i:hover
+{
+	opacity: 0.8;
+}
+
+
+.settings
+{
+	text-align: center;
+	background: rgba(000,000,000,0.9);
+}
+
+.settings_block
+{
+	padding-top: 20vh;
+} 
+.settings input
+{
+	background: #ccc;
+	border:none;
+	outline: none;
+	border-radius:20px;
+	padding:5px 0 5px 0;
+	position: relative;
+	display: block;
+	text-align: center;
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 1em;
+	color:#484848; 
+}
+
+.settings input::placeholder
+{
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 1em;
+	color:#484848; 
+}
+
+.settings p
+{
+	font-size: 0.9em;
+	text-align: left;
+	text-transform:uppercase;
+}
+
+.settings .button
+{
+	height: 6vh;
+	width: 100%;
+	text-align: center;
+	background: #840909;
+	border-radius: 4px;
+	box-shadow: 0px 2px 4px 0px #484848;
+	cursor: pointer;
+	transition: all .1s ease-in-out;
+	color: white;
+	border:none;
+	outline: none;
+}
+
+.settings .button:hover
+{
+	box-shadow: none;
+}
+
+.settings .button:hover i
+{
+	color:#179b20;
+}
+
+.settings i
+{
+	font-size: 1.3em;
+	line-height: 6vh;
+}
+
+#message
+{
+	background: rgba(145, 145, 145, 0.9);
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+#message .counter{
+	position: fixed;
+	font-size: 3em;
+	color: #b71c1c;
+	display: flex;
+	align-self: center;
+	z-index: 10;
+}
+
+
+#descAndList
+{
+	background: #000;
+}
+
+#descAndList .message_block h4
+{
+	font-size: 1.4em;
+    letter-spacing: 10px;
+}
+
+.message_block
+{
+	background: #fff;
+	border-radius: 20px;
+	box-shadow: 0 2px 8px #000000;
+	margin: 0;
+	color: #000;
+	font-size: 1.2em;
+	padding-top:10%;
+	
+}
+
+#descAndList .message_block
+{
+	background:transparent;
+	color:#eee;
+	height:auto;
+}
+
+.message_block button
+{
+	background:#000;
+	height: 6vh;
+	width: 100%;
+	text-align: center;
+	border-radius: 4px;
+	box-shadow: 0px 2px 4px 0px #484848;
+	cursor: pointer;
+	transition: all .1s ease-in-out;
+	color: white;
+	border:none;
+	outline: none;
+	font-size: 1em;
+}
+
+.message_block span
+{
+	font-size: 0.9em;
+	text-shadow: 0 0 4px #000;
+}
+
+.message_block h3 {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0;
+	width: 100%;
+	font-size: 1.8em;
+}
+
+.message_block h4 {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0;
+	font-size: 1.3em;
+	width: 100%;
+	padding: 2% 0;
+}
+
+.message_block h1
+{
+	font-size: 2em;
+	
+}
+
+.message_block .pointerDot
+{
+	position: absolute;
+	top: 0%;
+	left: 0;
+	color: red;
+	font-size: 1em;
+}
+
+.message_block .doneDot
+{
+	position: absolute;
+	top: 0%;
+	left: 0;
+	color: #181;
+	opacity: 1;
+	font-size: 1em;
+}
+
+/*/Music section/*/
+
+.music_container
+{
+	text-align:center;
+	position: fixed;
+	bottom:0;
+	height: 170px;
+	box-shadow: 5px 0px 14px #000;
+	clear: both;
+	min-width: 100%;
+	background: radial-gradient(#272626, rgb(0, 0, 0));
+	z-index: 2;
+	transition: all .5s;
+}
+
+.musicContainerSliderButton {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background: #840909;
+	right:10%;
+	top:60px;
+	font-size:1.2em;
+	text-align: center;
+	vertical-align: center;
+	border-radius: 50%;
+	color:rgba(255, 255, 255, 0.616);
+	z-index: 2;
+}
+
+.fas.musicContainerSliderButton {
+	line-height: 50px;
+}
+
+.musicContainerSliderButton:hover {
+	background: #84090962;
+	color:rgb(255, 255, 255);
+	cursor: pointer;
+}
+
+.music_container div.large_item
+{
+	cursor: pointer;
+	transition: all .1s ease-in-out;
+}
+
+.music_container div.large_item:hover
+{
+	opacity: 1;
+}
+
+.music_title h5
+{
+	height: 30px;
+	line-height: 30px;
+}
+
+
+
+.music_viewer .progressBar
+{
+	width:100%;
+	height: 5px;
+	font-size: 1em;
+	color: #ccc;
+	line-height: 3px;
+}
+
+.progressBarBack
+{
+	background:#757474;
+	border-radius: 2px;
+	height: 3px;
+	line-height: 3px;
+	position: relative;
+	cursor: pointer
+}
+
+.progressBarBg
+{
+	height: 100%;
+	width:0%;
+	position: absolute;
+	top:0;
+	left: 0;
+	background:white;
+}
+
+#volume
+{
+	vertical-align: super;
+}
+
+#volume .progressBarBg
+{
+	vertical-align: super;
+	height: 4px;
+}
+
+.remaningMusicTime
+{
+	text-align:right;
+}
+
+.currentMusicTime
+{
+	text-align:left;
+}
+
+
+.music_menu
+{
+	background: #840909;
+	border-radius: 0px;
+	position: relative;
+	cursor: pointer;
+	transition: all .1s ease-in-out;
+}
+
+.music_menu > i.large_item
+{
+	font-size: 1.3em;
+	line-height: 100%;
+}
+
+.music_menu_up
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	z-index: -4;
+	border-radius: 0px;
+	background: #b71c1c;
+	content: "M";
+	background: rgba(255,255,255,0);
+	border:2px dotted #484848;
+	line-height: 60px;
+	transition: top .3s ease-in-out;
+}
+
+.music_menu_down
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom:0;
+	left: 0;
+	z-index: -4;
+	border-radius: 0px;
+	background: rgba(255,255,255,0);
+	content: "<i class='fas fa-music'></i>";
+	border:2px dotted #484848;
+	line-height: 100%;
+	line-height: 60px;
+	transition: bottom .3s ease-in-out;
+}
+
+.music_menu_bottom
+{
+	background: #000;
+
+	height: 30%;
+
+	line-height: 50px;
+
+	margin-top: 10%;
+
+	clear: both;
+
+	align-content: center;
+
+	background:transparent;
+}
+
+
+.music_menu_bottom i
+{
+	font-size: 1.2em;
+	margin:0 2px;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+#playButtonMenuMusic
+{
+	font-size: 1.7em;
+}
+
+.music_menu_middle
+{
+	width: 100%;
+	height: 100%;
+}
+
+.music_audio_player
+{
+	display: block;
+}
+
+.ppq-audio-player
+{
+	height: 7vh !important;
+	line-height: 5vh !important;
+	background: rgba(255,255,255,0) !important;
+}
+
+.play-pause-btn
+{
+	display: none;
+}
+
+.player-bar
+{
+	margin-top: 20px !important;
+	width: 100%;
+}
+
+.player-bar-played
+{
+	background: #b71c1c !important;
+}
+
+.music_list
+{
+	background: rgba(000,000,000,9);
+	overflow-y: auto;
+	text-align:center;
+}
+
+.music_list_navbar
+{
+	line-height: 50px;
+	height: 50px;
+}
+
+.music_list_navbar i , .music_list_navbar h5
+{
+	line-height: 50px;
+	height: 50px;
+}
+
+.music_list_navbar i
+{
+	font-size: 1.7em;
+	cursor: pointer;
+}
+
+.music_list_navbar i:hover
+{
+	opacity: 0.7;
+}
+
+.music_list_navbar .fa-heart
+{
+	font-size:1.6em;
+}
+
+.music_list_navbar .fa-heart:hover
+{
+	color: #840909;
+	border-color:#840909;
+	cursor: pointer;
+}
+
+#music_genres
+{
+	padding-bottom: 20%;
+}
+
+.music_list_block
+{
+	background: #b71c1c;
+	font-size: 1.4em;
+	height: 23vh;
+	line-height: 23vh;
+	background-size: cover;
+	color: white;
+	letter-spacing: 4px;
+	text-shadow: 0px 0px 4px #fff;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+	text-transform:uppercase;
+	text-align: center;
+}
+
+.music_list_block:hover
+{
+	filter: brightness(1.4);
+}
+
+#music_kind
+{
+	background: rgba(000,000,000,9);
+	overflow-y: auto;
+	font-family: 'Rajdhani', sans-serif;
+	color: #ccc;
+	z-index: 100;
+}
+
+
+#music_kind li
+{
+	height: 8vh;
+	line-height: 8vh;
+}
+
+#music_kind li:hover
+{
+	filter: brightness(1.4);
+	background:rgba(255,255,255,0.2);
+	cursor: pointer;
+}
+
+.music_kind_numbering
+{
+	font-size: 1.6em;
+	color: #fff;
+}
+
+.music_kind_description p
+{
+	padding:0;
+	margin: 0;
+	text-align:left;
+}
+
+.music_kind_description p:first-child
+{
+	font-size: 1.3em;
+	line-height: 4vh;
+	margin-top: 1vh;
+	color: #fff;
+}
+
+.music_kind_description p:last-child
+{
+	font-size: 1em;
+	line-height: 2vh;
+	color: #ccc;
+
+}
+
+#music_choice
+{
+	z-index: 100;
+}
+
+
+#music_choice .choice_selector
+{
+	height: 50vh;
+	text-align:center;
+	line-height:40vh;
+	cursor: pointer;
+	position: relative;
+	overflow:hidden;
+}
+
+#music_choice .choice_selector:hover img
+{
+	transform: scale(1.1);
+}
+
+#music_choice .choice_selector p
+{
+	width:50%;
+	margin:0 auto;
+	font-size: 3em;
+	z-index: 4;
+	opacity: 1;
+	position: relative;
+}
+
+
+#music_choice .choice_selector img
+{
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 90%;
+	width:100%;
+	z-index: 0;
+	opacity: 0.5;
+	transition: all .5s linear;
+}
+
+.music_playlist_block h6
+{
+	font-size: 1.3em;
+}
+
+.music_playlist_block
+{
+	cursor: pointer;
+}
+
+.music_playlist_block:hover
+{
+	filter: brightness(120%);
+}
+
+.music_playlist_block img
+{
+	height: 135px;
+	width:135px;
+}
+
+.playlist_image img
+{
+	width:100%;
+}
+
+
+
+.hidden
+{
+	display: none !important;
+}
+
+
+@media only screen and (min-width:960px)
+{
+	
+
+}
+
+@media only screen and (min-width:1025px)
+{
+	.remaningMusicTime,
+	.currentMusicTime
+	{
+		text-align:center;
+	}
+}
+
+
+@media only screen and (min-width:990px)
+{
+	#main_menu{
+		position: relative;
+	}
+
+	
+
+}
+
+@media only screen and (max-width:900px)
+{
+	
+
+}
+
+@media only screen and (min-width:768px)
+{
+	#music_choice .choice_selector
+	{
+		height: 100%;
+	}
+	
+	.direction_button_menu div
+	{
+		margin-top: 10%;
+	}
+}
+
+@media only screen and (min-width:470px)
+{
+	.timer_clock
+	{
+		border:none;
+	}
+
+	.music_list_block
+	{
+		height: 50vh;
+	}
+
+	
+	
+}
+
+
+
+
+@media only screen and (max-width:991.5px)
+{
+    html {
+        font-size: 85%;
+    }
+
+	.nav-item a {
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        letter-spacing: 8px;
+        font-family: 'Rajdhani', sans-serif;
+        text-align: center;
+	}
+
+	.navbar-collapse {
+		position: fixed;
+		display: block;
+		top:62.1px;
+		background: #000;
+	}
+
+	#music_genres
+	{
+		padding-bottom: 45%;
+	}
+
+}
+

@@ -1,0 +1,7 @@
+*.todo
+*.code-workspace
+Music/
+MusicToUpload/
+Backup/
+Workspace_sublime/
+Includes/DataBase/accountKeys.php
