@@ -29,4 +29,3 @@ As I've mentioned
 * HTML, CSS, Bootstrap
 * SQL
 
-## Screenshots 📷
